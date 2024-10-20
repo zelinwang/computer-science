@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=qtcreator
+Comment=qtcreator5.14
+Exec=/home/wangzelin/software/qtcreator/bin/qtcreator.sh
+#Exec=/home/wangzelin/qtcreator/bin/qtcreator  #针对shell文件
+Icon=/home/wangzelin/software/qtcreator/share/icons/hicolor/512x512/apps/QtProject-qtcreator.png
+Terminal=false
+Type=Application
+Categories=Application;

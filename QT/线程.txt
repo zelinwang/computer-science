@@ -1,0 +1,14 @@
+QThread::run
+run 函数是做什么用的？Manual中说的清楚：
+
+run 对于线程的作用相当于main函数对于应用程序。它是线程的入口，run的开始和结束意味着线程的开始和结束。
+原文如下(这段话我们称为定理一吧)：
+
+The run() implementation is for a thread what the main() entry point is for the application. All code executed in a call stack that starts in the run() function is executed by the new thread, and the thread finishes when the function returns.
+这么短的文字一眼就看完了，可是，这是什么意思呢？又能说明什么问题呢？
+
+对照前面的定理，run函数中的代码时确定无疑要在次线程中运行的，那么其他的呢？比如 slot 是在次线程还是主线程中运行？
+
+你想说主线程，但又心有不甘，对么？
+
+只要重新定义一个新的类并且移动到线程中就可以了

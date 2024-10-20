@@ -1,0 +1,30 @@
+一、关联式容器
+
+map
+set
+
+实际上用的是红黑树的结构
+（时间复杂度是Olog2n）
+
+二、序列式容器
+
+1、连续内存
+vector
+array
+deque
+（时间复杂度是On）
+
+2、非连续内存
+list
+forwardlist
+
+三、散列式容器(hash table)
+
+unordered map
+unordered set
+
+里面包含了hash表
+
+array，vector的内存分配空间是连续的
+
+list的空间不是连续的
